@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "72bbb040d327f19ebdc76c0c60cc74d1"
+application_url = "https://theaters-trade-weird-amendments.trycloudflare.com"
+embedded = true
+name = "mvp-category-hierarchy"
+handle = "mvp-category-hierarchy"
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://theaters-trade-weird-amendments.trycloudflare.com/auth/callback",
+  "https://theaters-trade-weird-amendments.trycloudflare.com/auth/shopify/callback",
+  "https://theaters-trade-weird-amendments.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "product-portfolio-analysis.myshopify.com"
+automatically_update_urls_on_dev = true
