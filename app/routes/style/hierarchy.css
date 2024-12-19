@@ -1,0 +1,28 @@
+.hierarchy-container {
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+}
+
+.hierarchy-headings{
+  margin-bottom: 10px;
+
+}
+
+
+.main-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.main-category {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}

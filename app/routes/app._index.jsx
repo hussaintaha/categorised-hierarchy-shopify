@@ -97,8 +97,10 @@ export default function Index() {
   const generateProduct = () => fetcher.submit({}, { method: "POST" });
 
   return (
-    <Page fullWidth>
-      <Hierarchy />
-    </Page>
+    <>
+      <Page fullWidth>
+        <Hierarchy />
+      </Page>
+    </>
   );
 }

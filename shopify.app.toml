@@ -1,10 +1,14 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "72bbb040d327f19ebdc76c0c60cc74d1"
-application_url = "https://theaters-trade-weird-amendments.trycloudflare.com"
+application_url = "https://relay-creates-collaboration-status.trycloudflare.com"
 embedded = true
 name = "mvp-category-hierarchy"
 handle = "mvp-category-hierarchy"
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "product-portfolio-analysis.myshopify.com"
 
 [webhooks]
 api_version = "2024-10"
@@ -19,14 +23,10 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://theaters-trade-weird-amendments.trycloudflare.com/auth/callback",
-  "https://theaters-trade-weird-amendments.trycloudflare.com/auth/shopify/callback",
-  "https://theaters-trade-weird-amendments.trycloudflare.com/api/auth/callback"
+  "https://relay-creates-collaboration-status.trycloudflare.com/auth/callback",
+  "https://relay-creates-collaboration-status.trycloudflare.com/auth/shopify/callback",
+  "https://relay-creates-collaboration-status.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
 embedded = false
-
-[build]
-dev_store_url = "product-portfolio-analysis.myshopify.com"
-automatically_update_urls_on_dev = true
